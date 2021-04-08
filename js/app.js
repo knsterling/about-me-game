@@ -37,3 +37,48 @@ switch (color.toLowerCase()) {
     default:
         console.log('I don\'t know what your favorite color was.');
 }
+
+'use strict'
+
+let answer1 = confirm("Where did you get your degree?")
+if (answer1 === true) {
+    // console.log("cau.")
+} else {
+    alert("Nope, that's not it.");
+}
+
+let answer2 = confirm("What is your employment field?")
+if (answer2 === true) {
+    console.log("broadcast media.")
+} else {
+    alert("Nope, that's not it.");
+}
+
+let answer3 = confirm("Are you originally from San Pablo?")
+if (answer3 === true) {
+    console.log("No.")
+} else {
+    alert("From the city by The Bay.");
+}
+
+let answer4 = confirm("How long have you been doing television?")
+if (answer4 === true) {
+    console.log("21 years.")
+} else {
+    alert("Nope, that's not it.");
+}
+
+let answer5 = confirm("Are you intrigued by how computers and software work?")
+if (answer5 === true) {
+    console.log("yes.")
+} else {
+    alert("Read biography again.");
+}
+
+function myFunction() {
+    var person = prompt("What is your name?");
+    if (person != null) {
+        document.getElementById("demo").innerHTML =
+            "Hello " + person + "! How are you today?";
+    }
+}

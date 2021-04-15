@@ -1,6 +1,6 @@
 .inline-p{
 display: inline-block;
-}*/
+} 
 
 #px-div{
     width: 100px;
@@ -16,7 +16,7 @@ display: inline-block;
 
 #overflow-box{
     max-height: 100px;
-    /* overflow scroll  */
+    overflow scroll 
 }
 
 #bmp-box{

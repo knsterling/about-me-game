@@ -96,7 +96,7 @@ let userPoints = 0
 
 
 // Question 1
-let question1 = prompt("Where did kafele go to college", "CAU or Morehouse")
+let question1 = prompt("Where did kafele go to college")
 console.log(question1)
 
 let goToCollege = ["CAU"]
@@ -122,7 +122,7 @@ professionalField.push("broadcast tv")
 
 
 // Question 3
-let answer3 = prompt("Is kafele from san pablo?", "yes or no")
+let answer3 = prompt("Is kafele from san pablo?")
 console.log(answer3)
 
 let cityBorn = ["san francisco"]
@@ -136,7 +136,7 @@ cityBorn.push("san francisco")
 
 
 // / Question 4
-let question4 = prompt("Has kafele been in broadcast for 22 years?", "yes or no")
+let question4 = prompt("Has kafele been in broadcast for 22 years?")
 console.log(question4)
 
 let fieldDuration = ["no"]
@@ -149,7 +149,7 @@ fieldDuration.push("no")
 
 
 // / Question 5
-let question5 = prompt("Was he intrigued by how computers look and function?", "yes or no")
+let question5 = prompt("Was he intrigued by how computers look and function?")
 console.log(question5)
 
 let whyPivot = ["yes"]
@@ -162,11 +162,27 @@ whyPivot.push("yes")
 
 
 // Question 6
-let userAnswer = '';
-let limit = 6;
-let numGuesses = 0;
-while (userAnswer !== '11' && numGuesses < limit) {
-    userAnswer = prompt('What number am I thinking between 1 and 20?');
-    numGuesses++
+let limit = 4;
+let i = 0;
+let userAnswer = prompt('What number am I thinking between 1 and 20?');
+let points = 0;
+let question6 = 11;
+while (i < 4 && userAnswer !== question6) {
+    if (userAnswer < question6) {
+        alert("Too Low");
+        userAnswer = prompt('What number am I thinking between 1 and 20?');
+    }
+    else if (userAnswer > question6) {
+        alert("Too High");
+        userAnswer = prompt('What number am I thinking between 1 and 20?');
+    }
+
+    else {
+        alert("Winner!");
+        points++;
+        alert("Total points " + points);
+    }
+    i++;
+    break;
 }
-alert('you have ' + 6 + ' points.')
+

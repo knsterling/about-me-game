@@ -82,7 +82,7 @@
 //             "Hello " + person + "! How are you today?";
 //     }
 // }
-let userPoints = 0
+// let userPoints = 0
 
 
 
@@ -96,93 +96,172 @@ let userPoints = 0
 
 
 // Question 1
-let question1 = prompt("Where did kafele go to college")
-console.log(question1)
-
-let goToCollege = ["CAU"]
-console.log(goToCollege.length)
-
-for (let i = 0; i < goToCollege.length; i++) {
-    console.log(goToCollege[i])
+function whatCollege() {
+  let kafeleCollege = window.prompt('Where did Kafele go to college?');
+  if(kafeleCollege === 'toLowerCase.Clark Atlanta University') {
+  //   console.log('Yes my college is', + answer1);
+    alert('Yes my college is: Clark Atlanta University');
+  } else {
+  //   console.log('Nope!!! Try again');
+    alert('Nope! PLease try again?');
+  }
 }
-goToCollege.push("CAU")
+whatCollege();
+
+// console.log(question1)
+
+// let goToCollege = ["CAU"]
+// console.log(goToCollege.length)
+
+// for (let i = 0; i < goToCollege.length; i++) {
+//     console.log(goToCollege[i])
+// }
+// goToCollege.push("CAU")
 
 
-// Question 2
-let question2 = prompt("What is Kafele's professional field?")
-console.log(question2)
+// // Question 2
+// let question2 = prompt("What is Kafele's professional field?")
+// console.log(question2)
 
-let professionalField = ["broadcast tv"]
-console.log(professionalField.length)
+// let professionalField = ["broadcast tv"]
+// console.log(professionalField.length)
 
-for (let i = 0; i < professionalField; i++) {
-    console.log(professionalField[i])
+// for (let i = 0; i < professionalField; i++) {
+//     console.log(professionalField[i])
+// }
+// professionalField.push("broadcast tv")
+
+// Dondre Function 2
+function professionalField() {
+  let question2 = prompt('What is Kafele\'s professional field?');
+  if(question2 === 'Broadcast Tv') {
+    alert('You are cooking with grease now!!!');
+  } else {
+    alert('I\'m sorry but that is incorrect');
+  }
 }
-professionalField.push("broadcast tv")
+professionalField();
 
+// // Question 3
+// let answer3 = prompt("Is kafele from san pablo?")
+// console.log(answer3)
 
-// Question 3
-let answer3 = prompt("Is kafele from san pablo?")
-console.log(answer3)
+// let cityBorn = ["san francisco"]
+// console.log(cityBorn.length)
 
-let cityBorn = ["san francisco"]
-console.log(cityBorn.length)
+// for (let i = 0; i < cityBorn.length; i++) {
+//     console.log(cityBorn[i])
+// }
+// cityBorn.push("san francisco")
 
-for (let i = 0; i < cityBorn.length; i++) {
-    console.log(cityBorn[i])
+// Dondre's Question 3
+function whereIsKafeleFrom() {
+  let question3 = prompt('Where is Kafele from?');
+  if(question3 === 'San Francisco'){
+    alert('Yep! That is were I am from.');
+  } else {
+    alert('Nope, Guess a again.');
+  }
 }
-cityBorn.push("san francisco")
+whereIsKafeleFrom();
 
+// // / Question 4
+// let question4 = prompt("Has kafele been in broadcast for 22 years?")
+// console.log(question4)
 
+// let fieldDuration = ["no"]
+// console.log(fieldDuration.length)
 
-// / Question 4
-let question4 = prompt("Has kafele been in broadcast for 22 years?")
-console.log(question4)
+// for (let i = 0; i < fieldDuration.length; i++) {
+//     console.log(fieldDuration[i])
+// }
+// fieldDuration.push("no")
 
-let fieldDuration = ["no"]
-console.log(fieldDuration.length)
-
-for (let i = 0; i < fieldDuration.length; i++) {
-    console.log(fieldDuration[i])
+// Dondre question 4
+function broadcastingYears() {
+  let question4 = prompt('Has Kafele been in broadcast for 22 years?');
+  if(question4 === 'yes') {
+    alert('Yes, its been a long time');
+  } else {
+    alert('Nope thats not right');
+  }
 }
-fieldDuration.push("no")
+broadcastingYears();
 
 
-// / Question 5
-let question5 = prompt("Was he intrigued by how computers look and function?")
-console.log(question5)
+// // / Question 5
+// let question5 = prompt("Was he intrigued by how computers look and function?")
+// console.log(question5)
 
-let whyPivot = ["yes"]
-console.log(whyPivot.length)
+// let whyPivot = ["yes"]
+// console.log(whyPivot.length)
 
-for (let i = 0; i < whyPivot.length; i++) {
-    console.log(whyPivot[i])
+// for (let i = 0; i < whyPivot.length; i++) {
+//     console.log(whyPivot[i])
+// }
+// whyPivot.push("yes")
+
+// Dondre 5th Question
+function computers(){
+  let question5 = prompt('Was Kafele intriguied by how many computers look and function?');
+  if(question5 === 'yes') {
+    alert('yes we have a winner');
+  } else {
+    alert('Nope, Please try again');
+  }
 }
-whyPivot.push("yes")
 
+computers();
 
-// Question 6
-let limit = 4;
-let i = 0;
-let userAnswer = prompt('What number am I thinking between 1 and 20?');
-let points = 0;
-let question6 = 11;
-while (i < 4 && userAnswer !== question6) {
+// // Question 6
+// let limit = 4;
+// let i = 0;
+// let userAnswer = prompt('What number am I thinking between 1 and 20?');
+// let points = 0;
+// let question6 = 11;
+// while (i < 4 && userAnswer !== question6) {
+//     if (userAnswer < question6) {
+//         alert("Too Low");
+//         userAnswer = prompt('What number am I thinking between 1 and 20?');
+//     }
+//     else if (userAnswer > question6) {
+//         alert("Too High");
+//         userAnswer = prompt('What number am I thinking between 1 and 20?');
+//     }
+
+//     else {
+//         alert("Winner!");
+//         points++;
+//         alert("Total points " + points);
+//     }
+//     i++;
+//     break;
+// }
+
+// Dondre Question 6
+function guessingNumber() {
+//   let limit = 4;
+  let i = 0;
+  let userAnswer = prompt('What number am I thinking between 1 and 20?');
+  let points = 0;
+  let question6 = 11;
+  while (i < 4 && userAnswer !== question6) {
     if (userAnswer < question6) {
-        alert("Too Low");
-        userAnswer = prompt('What number am I thinking between 1 and 20?');
+      alert('Too Low');
+      userAnswer = prompt('What number am I thinking between 1 and 20?');
     }
     else if (userAnswer > question6) {
-        alert("Too High");
-        userAnswer = prompt('What number am I thinking between 1 and 20?');
+      alert('Too High');
+      userAnswer = prompt('What number am I thinking between 1 and 20?');
     }
 
     else {
-        alert("Winner!");
-        points++;
-        alert("Total points " + points);
+      alert('Winner!');
+      points++;
+      alert('Total points ' + points);
     }
     i++;
     break;
+  }
 }
-
+guessingNumber();
